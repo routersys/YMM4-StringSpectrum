@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{22ef475e-9e8c-45cd-93f6-71eec882286f}</ProjectGuid>
+    <ProjectGuid>{F6CCBA8D-4FCB-BF00-6CCF-8FFEF5E4B56D}</ProjectGuid>
     <RootNamespace>StringSpectrumShader</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
