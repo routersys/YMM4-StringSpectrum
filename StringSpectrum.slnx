@@ -9,6 +9,7 @@
   <Project Path="StringSpectrum/StringSpectrum.csproj">
     <BuildDependency Project="StringSpectrum.Shader/StringSpectrum.Shader.vcxproj" />
   </Project>
+  <Project Path="StringSpectrum.Tests/StringSpectrum.Tests.csproj" />
   <Project Path="StringSpectrum.Shader/StringSpectrum.Shader.vcxproj">
     <BuildType Solution="*|*" Project="Release" />
     <Platform Solution="*|*" Project="Win32" />
