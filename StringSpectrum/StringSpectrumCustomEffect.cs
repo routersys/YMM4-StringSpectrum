@@ -10,7 +10,7 @@ namespace StringSpectrum
         public const int MaxModes = 64;
         public const int ModeByteSize = MaxModes * sizeof(float);
 
-        private enum PropertyIndex
+        internal enum PropertyIndex
         {
             Width = 0,
             Amplitude,
