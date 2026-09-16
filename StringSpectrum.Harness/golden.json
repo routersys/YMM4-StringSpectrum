@@ -1,0 +1,114 @@
+{
+  "adapter": "Intel(R) Iris(R) Xe Graphics",
+  "driver": "32.0.101.7085",
+  "input": "synthetic 32 bands 300 frames 8F0211EF9F7FA60A",
+  "canvas": "1280x720",
+  "cases": [
+    {
+      "name": "default",
+      "frames": [
+        0
+      ],
+      "hash": "5BE35083903E2076A53EDF8AFE699BEB6BA1306443549E9AD70E26863F658943"
+    },
+    {
+      "name": "default-frame-4",
+      "frames": [
+        4
+      ],
+      "hash": "83A665BD763E2B6ADE88DD3D1EE681A283971D8893143794850267C01BE045DE"
+    },
+    {
+      "name": "default-frames-0-8",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hash": "3D4AA99BC3F20C5B0DE35CB8143769F4E94D76FA589DC50B250D8C3B7AD87C4C"
+    },
+    {
+      "name": "width-200",
+      "frames": [
+        0
+      ],
+      "hash": "B34AE4338E9DA944C930F5ED2F039E829A0583B615F8E9FF7D6C5A2748A42B09"
+    },
+    {
+      "name": "width-1200",
+      "frames": [
+        0
+      ],
+      "hash": "933FC037B952655B3FD4DE3416FFBD195960C68811C6B5EBA929410B929BF3B6"
+    },
+    {
+      "name": "amplitude-0",
+      "frames": [
+        0
+      ],
+      "hash": "5AB3FE9DA058D88229B05E88FEC3DC3EBD9AE135DEFC4B6E6B9FDC9559F180B3"
+    },
+    {
+      "name": "amplitude-400",
+      "frames": [
+        0
+      ],
+      "hash": "339A341D989C74B1BD59245F190396ABD55911EDBC0397E4C3978A83F33AAA5E"
+    },
+    {
+      "name": "frequency-0-frame-4",
+      "frames": [
+        4
+      ],
+      "hash": "4D40059BF37BD65BB02BE20FE59E4DCF590FF6154258BC883CB7394D20050958"
+    },
+    {
+      "name": "frequency-10-frame-4",
+      "frames": [
+        4
+      ],
+      "hash": "80CF38AFA205AB042C1DB5B6F9C57EA2B3A0FB23A0C78E5666959C3BAE6285A1"
+    },
+    {
+      "name": "modes-1",
+      "frames": [
+        0
+      ],
+      "hash": "A44FA90FFCF32E1D0D09E8A7A16424B4D196A8B2E3A59292BF031219BFB3ECC5"
+    },
+    {
+      "name": "modes-64",
+      "frames": [
+        0
+      ],
+      "hash": "36DC9DE6F55F8A720DDE7A7D428FA75230913512CC9F9F0C29004167CC71DEA5"
+    },
+    {
+      "name": "thickness-1",
+      "frames": [
+        0
+      ],
+      "hash": "132C8F7E6E0FB6931B98A0BED5A86C2525E77D6E2A909068E9350436F5CE870A"
+    },
+    {
+      "name": "thickness-30",
+      "frames": [
+        0
+      ],
+      "hash": "6DE07B41991E19CBA7CA0B1A9CCF59A2024C459F590BE186C24F404DF941F8A1"
+    },
+    {
+      "name": "color-half-red",
+      "frames": [
+        0
+      ],
+      "hash": "FC8970FB748E5C8D8AA0FF9E1E996B09811C9A6D7EFEC414949EBDB649A0B2F1"
+    }
+  ]
+}
