@@ -14,6 +14,7 @@ namespace StringSpectrum
         public StringSpectrumParameter(SharedDataStore? sharedData = null) : base(sharedData)
         {
             StringSpectrumTelemetry.EnsureStartedOnce();
+            StringSpectrumUpdateNotifier.EnsureCheckedOnce();
         }
 
         [Display(Name = nameof(Texts.StringWidth), Description = nameof(Texts.StringWidthDescription), Order = 10, ResourceType = typeof(Texts))]
