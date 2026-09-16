@@ -10,6 +10,8 @@ YukkuriMovieMaker4（YMM4）上で動作する、音声に合わせて弦が振�
 低い周波数帯を 1 次、その上を 2 次と、両端を固定した弦の振動モードへ順に割り当て、重ね合わせた形を一本の線で描きます。
 n 次のモードは基本振動数の n 倍で振動するため、同じ音が続いても形は時間とともに変わります。
 
+![Image](https://github.com/routersys/YMM4-StringSpectrum/blob/main/docs/StringSpectrum.png)
+
 ---
 
 ## 目次
