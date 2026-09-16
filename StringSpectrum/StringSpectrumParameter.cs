@@ -9,8 +9,13 @@ using YukkuriMovieMaker.Project;
 
 namespace StringSpectrum
 {
-    public class StringSpectrumParameter(SharedDataStore? sharedData = null) : AudioSpectrumParameterBase(sharedData)
+    public class StringSpectrumParameter : AudioSpectrumParameterBase
     {
+        public StringSpectrumParameter(SharedDataStore? sharedData = null) : base(sharedData)
+        {
+            StringSpectrumTelemetry.EnsureStartedOnce();
+        }
+
         [Display(Name = nameof(Texts.StringWidth), Description = nameof(Texts.StringWidthDescription), Order = 10, ResourceType = typeof(Texts))]
         [AnimationSlider("F1", "px", 0, 1920)]
         public Animation StringWidth { get; } = new Animation(600, 0.01, YMM4Constants.VeryLargeValue);
