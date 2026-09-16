@@ -93,7 +93,15 @@ namespace StringSpectrum
                 Span<byte> buffer = stackalloc byte[ConstantBufferByteSize];
                 MemoryMarshal.Write(buffer, in _cb);
                 _modes.CopyTo(buffer[HeaderByteSize..]);
-                drawInformation.SetPixelShaderConstantBuffer(buffer);
+                try
+                {
+                    drawInformation.SetPixelShaderConstantBuffer(buffer);
+                }
+                catch (Exception exception)
+                {
+                    StringSpectrumTelemetry.Report(exception);
+                    throw;
+                }
             }
 
             [StructLayout(LayoutKind.Sequential)]

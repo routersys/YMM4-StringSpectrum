@@ -48,7 +48,15 @@ namespace StringSpectrum
 
         public override IAudioSpectrumSource CreateShapeSource(IGraphicsDevicesAndContext devices)
         {
-            return new StringSpectrumSource(devices, this);
+            try
+            {
+                return new StringSpectrumSource(devices, this);
+            }
+            catch (Exception exception)
+            {
+                StringSpectrumTelemetry.Report(exception);
+                throw;
+            }
         }
 
         protected override IEnumerable<IAnimatable> GetAnimatables() =>

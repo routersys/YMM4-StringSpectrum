@@ -62,6 +62,19 @@ namespace StringSpectrum
 
         public void Update(TimelineItemSourceDescription desc, float[] spectrum)
         {
+            try
+            {
+                UpdateCore(desc, spectrum);
+            }
+            catch (Exception exception)
+            {
+                StringSpectrumTelemetry.Report(exception);
+                throw;
+            }
+        }
+
+        private void UpdateCore(TimelineItemSourceDescription desc, float[] spectrum)
+        {
             if (_effect is null)
                 return;
 
@@ -141,6 +154,19 @@ namespace StringSpectrum
         }
 
         public void Dispose()
+        {
+            try
+            {
+                DisposeCore();
+            }
+            catch (Exception exception)
+            {
+                StringSpectrumTelemetry.Report(exception);
+                throw;
+            }
+        }
+
+        private void DisposeCore()
         {
             _crop.SetInput(0, null, true);
             _effect?.SetInput(0, null, true);

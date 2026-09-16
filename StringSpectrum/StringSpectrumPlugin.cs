@@ -13,7 +13,15 @@ namespace StringSpectrum
 
         public IAudioSpectrumParameter CreateAudioSpectrumParameter(SharedDataStore? sharedData)
         {
-            return new StringSpectrumParameter(sharedData);
+            try
+            {
+                return new StringSpectrumParameter(sharedData);
+            }
+            catch (Exception exception)
+            {
+                StringSpectrumTelemetry.Report(exception);
+                throw;
+            }
         }
     }
 }
